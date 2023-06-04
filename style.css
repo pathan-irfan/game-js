@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  }
+  
+  #container {
+   background-color: rgba(145, 232, 195, 0.539); 
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/452/243/625/sunset-16-bit-pixel-art-landscape-wallpaper-preview.jpg")  ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 1000px;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px black;
+    box-shadow: 8px 5px 5px rgba(rgb(33, 32, 32), rgb(21, 21, 21), rgb(10, 10, 10), alpha);
+  }
+  
+  #container #dino {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    bottom: 28px;
+    left: 20px;
+  }
+  
+  #container #dino img {
+    height: 70px;
+    width: 70px;
+  }
+  
+  .dinoActive {
+    animation: dinoAnimation 0.5s linear infinite;
+  }
+  
+  @keyframes dinoAnimation {
+    0% {
+      bottom: 28px;
+    }
+    45%,
+    55% {
+      bottom: 160px;
+    }
+  }
+  
+  #container #block {
+    height: 80px;
+    width: 125px;
+    position: absolute;
+    bottom: 20px;
+    right: -20;
+  }
+  
+  #container #block img {
+    height: 70px;
+    width: 125px;
+  }
+  
+  .blockActive {
+    animation: blockAnimation 1.4s linear infinite;
+  }
+  
+  @keyframes blockAnimation {
+    0% {
+      right: -125px;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  
+  #container #road {
+    height: 30px;
+    width: 1200px;
+    position: absolute;
+    bottom: 23px;
+    animation: none; /* roadAnimation 1s linear infinite none; */
+  }
+  
+  #container #road img {
+    height: 50px;
+    width: 300vw;
+    position: absolute;
+    left: 0;
+  }
+  
+  @keyframes roadAnimation {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -200%;
+    }
+  }
+  
+  #score {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  
+  #gameover {
+    font-family: 'Lucida Sans';
+    display: none;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 70px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    white-space: pre-line; /* Add this line */
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1200px) {
+    #container {
+      width: 90%;
+      max-width: 1000px;
+    }
+  
+    #container #road img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #container {
+      height: 300px;
+    }}
+  
+
+    
