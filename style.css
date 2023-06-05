@@ -13,7 +13,7 @@
   
   #container {
    background-color: rgba(145, 232, 195, 0.539); 
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/452/243/625/sunset-16-bit-pixel-art-landscape-wallpaper-preview.jpg")  ; 
+    background-image: url("/images/mainbg.jpg")  ; 
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -65,7 +65,7 @@
   }
   
   .blockActive {
-    animation: blockAnimation 1.4s linear infinite;
+    animation: blockAnimation 2.8s linear infinite;
   }
   
   @keyframes blockAnimation {
