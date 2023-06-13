@@ -1,4 +1,3 @@
-
 const container = document.querySelector("#container");
 const dino = document.querySelector("#dino");
 const block = document.querySelector("#block");
@@ -19,7 +18,7 @@ const startGame = () => {
   block.classList.add("blockActive");
   road.firstElementChild.style.animation = "roadAnimation 3s linear infinite";
   playerScore = 0;
-  interval = setInterval(scoreCounter, 200);
+  interval = setInterval(scoreCounter, 1000); // Adjust interval duration here
 };
 
 const jump = () => {
